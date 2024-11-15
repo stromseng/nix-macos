@@ -65,6 +65,9 @@
   # Enable alternative shell support in nix-darwin.
   # programs.fish.enable = true;
 
+  # Enable touchid for sudo commands
+  security.pam.enableSudoTouchIdAuth = true;
+
   # Used for backwards compatibility, please read the changelog before changing. 
   # $ darwin-rebuild changelog
   system.stateVersion = 5;
