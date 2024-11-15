@@ -1,8 +1,14 @@
 {config, pkgs, lib, self, ...} :
 
 {
-    home-manager.users.magnus = {
+    users.users.magnus = {
+        name = "magnus";
+        home = "/Users/magnus";
+    };
 
+    home-manager.backupFileExtension = "hmbak";
+
+    home-manager.users.magnus = {
         programs = {
     zsh = {
       enable = true;
@@ -46,7 +52,7 @@
     };
   };
 
-      home.stateVersion = 24.05; # Dont change
+      home.stateVersion = "24.11";
     };
     
 
