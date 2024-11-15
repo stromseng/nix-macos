@@ -68,6 +68,17 @@
   # Enable touchid for sudo commands
   security.pam.enableSudoTouchIdAuth = true;
 
+  system.defaults = {
+    dock.autohide = true; # Automatically hide and show the Dock
+    dock.mru-spaces = false; # Don't rearrange spaces based on most recently used
+
+    finder.AppleShowAllExtensions = true; # Show all file extensions in Finder
+    finder.FXPreferredViewStyle = "clmv"; # Finder column view
+    NSGlobalDomain.AppleShowAllFiles = true; # Show hidden files in Finder
+
+    screencapture.location = "~/Pictures/screenshots"; # Save screenshots to the Pictures folder
+  };
+
   # Used for backwards compatibility, please read the changelog before changing. 
   # $ darwin-rebuild changelog
   system.stateVersion = 5;
