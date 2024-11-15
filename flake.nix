@@ -1,3 +1,4 @@
+# Run `darwin-rebuild switch --flake ~/nix` to rebuild system
 {
   description = "Magnus's nix-darwin system flake";
 
