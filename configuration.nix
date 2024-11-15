@@ -2,7 +2,7 @@
 {
     # Import modules
     imports = [
-        ./modules/zsh.nix
+        ./home.nix
     ];
 
     # Allow unfree packages

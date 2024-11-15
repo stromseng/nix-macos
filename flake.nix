@@ -6,10 +6,13 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew"; # manage homebrew insallation
+
+    home-manager.url = "github:nix-community/home-manager"; # manage dotfiles etc
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#mmbp
@@ -17,6 +20,7 @@
       modules = [
         ./configuration.nix
       nix-homebrew.darwinModules.nix-homebrew
+      home-manager.darwinModules.home-manager
         {
           nix-homebrew = {
             # Install Homebrew under the default prefix

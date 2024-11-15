@@ -1,5 +1,9 @@
-{ pkgs, ... }: {
-  programs = {
+{config, pkgs, lib, self, ...} :
+
+{
+    home-manager.users.magnus = {
+
+        programs = {
     zsh = {
       enable = true;
       enableCompletion = true;
@@ -41,4 +45,11 @@
       enable = true;
     };
   };
+    };
+    
+    
+    
+
+    
+
 }
