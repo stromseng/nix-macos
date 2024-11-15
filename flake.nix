@@ -24,7 +24,6 @@
         # Homebrew packages to install
         homebrew = {
             enable = true;
-
             # CLI apps
             brews = [
                 "mas" # Mac App Store CLI
@@ -33,12 +32,19 @@
             casks = [
 
             ];
-
             # Apple app store apps
             masApps = {
 
             };
+            onActivation.autoUpdate = true;
+            #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
+            onActivation.upgrade = true;
         };
+
+        # Install fonts
+        fonts.packages = [
+            (pkgs.nerdfonts.override {fonts = [ "JetBrainsMono"];})
+        ];
 
 
 
