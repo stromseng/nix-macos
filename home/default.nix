@@ -45,7 +45,9 @@
       enable = true;
     };
   };
+
+      home.stateVersion = 24.05; # Dont change
     };
     
-    home.stateVersion = 24.05; # Dont change
+
 }
