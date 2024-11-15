@@ -58,6 +58,11 @@
       ripgrep = {
         enable = true;
       };
+
+      starship = {
+        enable = true;
+        enableZshIntegration = true;
+      };
     };
 
     home.stateVersion = "24.11";

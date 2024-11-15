@@ -19,6 +19,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     nixfmt-rfc-style # new official nix formatter, not yet stable
+    nil # nix language server
   ];
 
   # Homebrew packages to install
