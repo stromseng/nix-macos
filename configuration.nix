@@ -20,6 +20,8 @@
     neovim
     nixfmt-rfc-style # new official nix formatter, not yet stable
     nil # nix language server
+    uv # python manager
+    gh # github cli
   ];
 
   # Homebrew packages to install
@@ -29,8 +31,6 @@
     brews = [
       "mas" # Mac App Store CLI
       "fileicon" # Set file/folder icons
-      "gh" # GitHub CLI
-      "uv" # Python manager
     ];
     # GUI apps
     casks = [
