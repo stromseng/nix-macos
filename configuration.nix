@@ -1,62 +1,68 @@
-{config, pkgs, lib, self, ...} :
 {
-    # Import modules
-    imports = [
-        ./home
+  config,
+  pkgs,
+  lib,
+  self,
+  ...
+}:
+{
+  # Import modules
+  imports = [
+    ./home
+  ];
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
+  # List packages installed in system profile. To search by name, run:
+  # $ nix-env -qaP | grep wget
+  environment.systemPackages = with pkgs; [
+    neovim
+    nixfmt-rfc-style # new official nix formatter, not yet stable
+  ];
+
+  # Homebrew packages to install
+  homebrew = {
+    enable = true;
+    # CLI apps
+    brews = [
+      "mas" # Mac App Store CLI
+      "fileicon" # Set file/folder icons
+      "gh" # GitHub CLI
+      "uv" # Python manager
     ];
+    # GUI apps
+    casks = [
 
-    # Allow unfree packages
-      nixpkgs.config.allowUnfree = true;
+    ];
+    # Apple app store apps
+    masApps = {
 
-        # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages = with pkgs;[ 
-        neovim
-        nixfmt-rfc-style # new official nix formatter, not yet stable
-        ];
+    };
+    onActivation.autoUpdate = true;
+    #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
+    onActivation.upgrade = true;
+  };
 
-        # Homebrew packages to install
-        homebrew = {
-            enable = true;
-            # CLI apps
-            brews = [
-                "mas" # Mac App Store CLI
-                "fileicon" # Set file/folder icons
-                "gh" # GitHub CLI
-                "uv" # Python manager
-            ];
-            # GUI apps
-            casks = [
+  # Install fonts
+  fonts.packages = [
+    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 
-            ];
-            # Apple app store apps
-            masApps = {
+  # Auto upgrade nix package and the daemon service.
+  services.nix-daemon.enable = true;
+  # nix.package = pkgs.nix;
 
-            };
-            onActivation.autoUpdate = true;
-            #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
-            onActivation.upgrade = true;
-        };
+  # Necessary for using flakes on this system.
+  nix.settings.experimental-features = "nix-command flakes";
 
-        # Install fonts
-        fonts.packages = [
-            (pkgs.nerdfonts.override {fonts = [ "JetBrainsMono"];})
-        ];
+  # Enable alternative shell support in nix-darwin.
+  # programs.fish.enable = true;
 
-      # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
-      # nix.package = pkgs.nix;
+  # Used for backwards compatibility, please read the changelog before changing. 
+  # $ darwin-rebuild changelog
+  system.stateVersion = 5;
 
-      # Necessary for using flakes on this system.
-      nix.settings.experimental-features = "nix-command flakes";
-
-      # Enable alternative shell support in nix-darwin.
-      # programs.fish.enable = true;
-
-      # Used for backwards compatibility, please read the changelog before changing. 
-      # $ darwin-rebuild changelog
-      system.stateVersion = 5;
-
-      # The platform the configuration will be used on. 
-      nixpkgs.hostPlatform = "aarch64-darwin";
+  # The platform the configuration will be used on. 
+  nixpkgs.hostPlatform = "aarch64-darwin";
 }
