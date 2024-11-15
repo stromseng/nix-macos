@@ -2,7 +2,7 @@
 {
     # Import modules
     imports = [
-        ./home.nix
+        ./home
     ];
 
     # Allow unfree packages
