@@ -15,7 +15,7 @@
     # $ darwin-rebuild build --flake .#mmbp
     darwinConfigurations."mmbp" = nix-darwin.lib.darwinSystem {
       modules = [
-        ./configuration 
+        ./configuration.nix
       nix-homebrew.darwinModules.nix-homebrew
         {
           nix-homebrew = {
