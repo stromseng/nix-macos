@@ -23,7 +23,6 @@
                 "mas" # Mac App Store CLI
                 "fileicon" # Set file/folder icons
                 "gh" # GitHub CLI
-                "starship" # Cross-shell prompt
                 "uv" # Python manager
             ];
             # GUI apps
@@ -44,8 +43,6 @@
             (pkgs.nerdfonts.override {fonts = [ "JetBrainsMono"];})
         ];
 
-
-
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
       # nix.package = pkgs.nix;
@@ -55,7 +52,6 @@
 
       # Enable alternative shell support in nix-darwin.
       # programs.fish.enable = true;
-
 
       # Used for backwards compatibility, please read the changelog before changing. 
       # $ darwin-rebuild changelog
