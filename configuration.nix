@@ -40,13 +40,14 @@
       "slack" # Chat app
       "stats" # System stats in menu bar
       "warp" # Terminal
+      "cursor" # AI IDE
     ];
     # Apple app store apps
     masApps = {
 
     };
     onActivation.autoUpdate = true;
-    #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
+    onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
     onActivation.upgrade = true;
   };
 
