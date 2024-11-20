@@ -44,7 +44,7 @@
     ];
     # Apple app store apps
     masApps = {
-
+      "Xcode" = 497799835; # Xcode
     };
     onActivation.autoUpdate = true;
     onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
