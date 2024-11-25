@@ -41,6 +41,7 @@
       "stats" # System stats in menu bar
       "warp" # Terminal
       "cursor" # AI IDE
+      "whisky" # Wine wrapper for Mac, windows apps on Mac
     ];
     # Apple app store apps
     masApps = {
