@@ -42,6 +42,7 @@
       "warp" # Terminal
       "cursor" # AI IDE
       "whisky" # Wine wrapper for Mac, windows apps on Mac
+      "lookaway" # Reminder to look away from screen
     ];
     # Apple app store apps
     masApps = {
