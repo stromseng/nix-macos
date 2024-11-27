@@ -22,6 +22,7 @@
     nil # nix language server
     uv # python manager
     gh # github cli
+    fnm # fast node version manager
   ];
 
   # Homebrew packages to install

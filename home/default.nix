@@ -43,8 +43,10 @@
         };
         initExtraBeforeCompInit = '''';
         initExtra = ''
-          PATH=~/.console-ninja/.bin:$PATH
-          export PATH="/Users/magnus/.local/bin:$PATH"
+          PATH=~/.console-ninja/.bin:$PATH # vscode extension console ninja
+          export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
+
+          eval "$(fnm env --use-on-cd --shell zsh)" # fast node version manager
         '';
       };
       # A modern ls replacement
