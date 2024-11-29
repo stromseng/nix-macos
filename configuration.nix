@@ -46,10 +46,23 @@
       "lookaway" # Reminder to look away from screen
       "visual-studio-code" # vscode IDE
       "arc" # browser
+      "swish" # tiling trackpad control
+      "jordanbaird-ice" # menu bar icon manager
+      "lookaway" # break time reminder
+      "chatgpt" # openai chatgpt app
+      "raycast" # spotlight replacement
+      "spotify" # music streaming
+      "messenger" # facebook messenger
+      "notion" # note app
+      "stremio" # media center / streaming
+      "focusrite-control" # focusrite audio interface control software
+      "lm-studio" # local ml models
+
     ];
     # Apple app store apps
     masApps = {
-      "Xcode" = 497799835; # Xcode
+      "Xcode" = 497799835; # Xcode IDE
+      "Bitwarden" = 1352778147; # password manager
     };
     onActivation.autoUpdate = true;
     onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
@@ -92,9 +105,10 @@
     screencapture.location = "~/Pictures/screenshots"; # Save screenshots to the Pictures folder
 
     trackpad.Clicking = true; # enable tap to click
-
-    keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
   };
+
+  system.keyboard.enableKeyMapping = true;
+  system.keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
 
   # Used for backwards compatibility, please read the changelog before changing. 
   # $ darwin-rebuild changelog
