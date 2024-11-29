@@ -37,7 +37,7 @@
     casks = [
       "alt-tab" # Windows-like alt-tab
       "discord" # Chat app
-      "middleclick" # three finger tap for middle click
+      "middle" # three finger tap for middle click
       "slack" # Chat app
       "stats" # System stats in menu bar
       "warp" # Terminal
