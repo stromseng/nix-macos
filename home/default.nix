@@ -16,6 +16,12 @@
 
   home-manager.users.magnus = {
     programs = {
+      git = {
+        enable = true;
+        userName = "Magnus Strømseng";
+        userEmail = "magnus.stromseng@gmail.com";
+      };
+
       zsh = {
         enable = true;
         enableCompletion = true;
