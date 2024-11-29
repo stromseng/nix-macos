@@ -44,6 +44,8 @@
       "cursor" # AI IDE
       "whisky" # Wine wrapper for Mac, windows apps on Mac
       "lookaway" # Reminder to look away from screen
+      "visual-studio-code" # vscode IDE
+      "arc" # browser
     ];
     # Apple app store apps
     masApps = {
@@ -75,12 +77,23 @@
   system.defaults = {
     dock.autohide = true; # Automatically hide and show the Dock
     dock.mru-spaces = false; # Don't rearrange spaces based on most recently used
+    dock.minimize-to-application = true; # minimize to app icon
+    dock.show-recents = false; # disable showing recent apps
 
+    finder.CreateDesktop = false; # disable desktop icons
+    #finder._FXShowPosixPathInTitle = true; # Show full POSIX file path
+    finder.ShowPathbar = true; # show path bar on bottom
+    finder.ShowStatusBar = true; # show status bar at bottom
     finder.AppleShowAllExtensions = true; # Show all file extensions in Finder
     finder.FXPreferredViewStyle = "clmv"; # Finder column view
+    finder.ShowRemovableMediaOnDesktop = false; # disable showing removable media on desktop
     NSGlobalDomain.AppleShowAllFiles = true; # Show hidden files in Finder
 
     screencapture.location = "~/Pictures/screenshots"; # Save screenshots to the Pictures folder
+
+    trackpad.Clicking = true; # enable tap to click
+
+    keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
   };
 
   # Used for backwards compatibility, please read the changelog before changing. 
