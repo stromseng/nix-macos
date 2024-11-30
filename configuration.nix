@@ -39,7 +39,6 @@
       "discord" # Chat app
       "middle" # three finger tap for middle click
       "slack" # Chat app
-      "stats" # System stats in menu bar
       "warp" # Terminal
       "cursor" # AI IDE
       "whisky" # Wine wrapper for Mac, windows apps on Mac
