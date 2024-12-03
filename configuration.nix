@@ -56,6 +56,7 @@
       "stremio" # media center / streaming
       "focusrite-control" # focusrite audio interface control software
       "lm-studio" # local ml models
+      "betterdisplay" # monitor / display config manager
 
     ];
     # Apple app store apps
