@@ -20,6 +20,10 @@
         enable = true;
         userName = "Magnus Strømseng";
         userEmail = "magnus.stromseng@gmail.com";
+
+        extraConfig = {
+          pull.rebase = false;
+        };
       };
 
       zsh = {
