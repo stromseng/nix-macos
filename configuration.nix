@@ -57,6 +57,7 @@
       "focusrite-control" # focusrite audio interface control software
       "lm-studio" # local ml models
       "betterdisplay" # monitor / display config manager
+      "stats" # system stats in menu bar
 
     ];
     # Apple app store apps
