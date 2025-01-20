@@ -60,6 +60,7 @@
       "stats" # system stats in menu bar
       "burp-suite" # web security testing
       "zap" # web security testing
+      "ghostty" # terminal emulator
 
     ];
     # Apple app store apps
