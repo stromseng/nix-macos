@@ -59,6 +59,7 @@
       "betterdisplay" # monitor / display config manager
       "stats" # system stats in menu bar
       "burp-suite" # web security testing
+      "zap" # web security testing
 
     ];
     # Apple app store apps
