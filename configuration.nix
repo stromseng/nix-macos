@@ -32,6 +32,7 @@
     brews = [
       "mas" # Mac App Store CLI
       "fileicon" # Set file/folder icons
+      "sqlmap" # SQL injection tool
     ];
     # GUI apps
     casks = [
