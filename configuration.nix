@@ -62,6 +62,7 @@
       "burp-suite" # web security testing
       "zap" # web security testing
       "ghostty" # terminal emulator
+      "PrusaSlicer" # 3d printer slicer
 
     ];
     # Apple app store apps

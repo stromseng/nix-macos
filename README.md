@@ -8,4 +8,5 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 ```
 
 - Run `darwin-rebuild switch --flake ~/nix` to rebuild system
+  - `nix run nix-darwin -- switch --flake .#mmbp` for macbook pro
 - Run `nix flake update` to update flake lock file
