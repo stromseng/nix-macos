@@ -65,6 +65,7 @@
       "PrusaSlicer" # 3d printer slicer
       "db-browser-for-sqlite" # sqlite db browser
       "docker" # container manager
+      "google-chrome" # browser
 
     ];
     # Apple app store apps
