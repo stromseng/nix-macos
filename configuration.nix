@@ -64,6 +64,7 @@
       "ghostty" # terminal emulator
       "PrusaSlicer" # 3d printer slicer
       "db-browser-for-sqlite" # sqlite db browser
+      "docker" # container manager
 
     ];
     # Apple app store apps
@@ -117,10 +118,10 @@
   system.keyboard.enableKeyMapping = true;
   system.keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
 
-  # Used for backwards compatibility, please read the changelog before changing. 
+  # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 5;
 
-  # The platform the configuration will be used on. 
+  # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "aarch64-darwin";
 }
