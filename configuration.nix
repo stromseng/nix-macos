@@ -63,6 +63,7 @@
       "zap" # web security testing
       "ghostty" # terminal emulator
       "PrusaSlicer" # 3d printer slicer
+      "db-browser-for-sqlite" # sqlite db browser
 
     ];
     # Apple app store apps

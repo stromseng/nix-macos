@@ -1,12 +1,20 @@
 # My nix-darwin config for macos
 
-- To get started, install from determinate systems using
+## Installation
 
-```shell
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
-  sh -s -- install
-```
+1. To get started, install from determinate systems using
 
-- Run `darwin-rebuild switch --flake ~/nix` to rebuild system
-  - `nix run nix-darwin -- switch --flake .#mmbp` for macbook pro
+    ```shell
+    curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
+        sh -s -- install
+    ```
+
+2.
+    > [!WARNING]
+    > Install homebrew before using darwin-rebuild. It will fail otherwise due to missing homebrew installation.
+
+3. Run `nix run nix-darwin -- switch --flake .#mmbp` to rebuild system first time
+
+## Updating
+
 - Run `nix flake update` to update flake lock file
