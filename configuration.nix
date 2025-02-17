@@ -33,6 +33,11 @@
       "mas" # Mac App Store CLI
       "fileicon" # Set file/folder icons
       "sqlmap" # SQL injection tool
+      "qmk/qmk/qmk" # keyboard firmware
+      "gobuster" # website directory and file brute force tool
+      "wget" # download files
+      "hashcat" # password cracker
+      #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
     ];
     # GUI apps
     casks = [
@@ -66,15 +71,21 @@
       "db-browser-for-sqlite" # sqlite db browser
       "docker" # container manager
       "google-chrome" # browser
+      "postman" # api testing
+      "steam" # game store
+      "microsoft-teams" # microsoft teams
+      "minecraft" # game
+      "modrinth" # minecraft mod manager
 
     ];
     # Apple app store apps
     masApps = {
       "Xcode" = 497799835; # Xcode IDE
       "Bitwarden" = 1352778147; # password manager
+      "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
     };
     onActivation.autoUpdate = true;
-    onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
+    #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
     onActivation.upgrade = true;
   };
 
