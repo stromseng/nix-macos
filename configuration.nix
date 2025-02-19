@@ -76,6 +76,7 @@
       "microsoft-teams" # microsoft teams
       "minecraft" # game
       "modrinth" # minecraft mod manager
+      "libreoffice" # office suite
 
     ];
     # Apple app store apps
