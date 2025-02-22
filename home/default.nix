@@ -57,6 +57,8 @@
           export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
 
           eval "$(fnm env --use-on-cd --shell zsh)" # fast node version manager
+
+          . "$HOME/.cargo/env" # rust
         '';
       };
       # A modern ls replacement
