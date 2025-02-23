@@ -28,17 +28,22 @@
   # Homebrew packages to install
   homebrew = {
     enable = true;
+    taps = [
+      "oven-sh/bun" # bun, javascript toolkit
+      "qmk/qmk" # keyboard firmware
+    ];
     # CLI apps
     brews = [
       "mas" # Mac App Store CLI
       "fileicon" # Set file/folder icons
       "sqlmap" # SQL injection tool
-      "qmk/qmk/qmk" # keyboard firmware
       "gobuster" # website directory and file brute force tool
       "wget" # download files
       "hashcat" # password cracker
       "rustup" # rust language manager. Run `rustup-init` after install
       #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
+      "oven-sh/bun/bun" # bun, javascript toolkit
+      "qmk/qmk/qmk" # keyboard firmware
     ];
     # GUI apps
     casks = [
