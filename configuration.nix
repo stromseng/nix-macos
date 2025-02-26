@@ -46,6 +46,7 @@
       "qmk/qmk/qmk" # keyboard firmware
       "hydra" # bruteforce password cracking
       "sqlite" # sqlite db cli tool
+      "sqlx-cli" # rust sqlx cli tool
     ];
     # GUI apps
     casks = [
