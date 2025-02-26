@@ -44,6 +44,7 @@
       #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
       "oven-sh/bun/bun" # bun, javascript toolkit
       "qmk/qmk/qmk" # keyboard firmware
+      "hydra" # bruteforce password cracking
     ];
     # GUI apps
     casks = [
@@ -56,6 +57,7 @@
       "whisky" # Wine wrapper for Mac, windows apps on Mac
       "lookaway" # Reminder to look away from screen
       "visual-studio-code" # vscode IDE
+      "visual-studio-code@insiders" # vscode insiders
       "arc" # browser
       "swish" # tiling trackpad control
       "jordanbaird-ice" # menu bar icon manager
