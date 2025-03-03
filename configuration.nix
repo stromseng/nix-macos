@@ -47,6 +47,7 @@
       "hydra" # bruteforce password cracking
       "sqlite" # sqlite db cli tool
       "sqlx-cli" # rust sqlx cli tool
+      "graphviz" # keras plot model
     ];
     # GUI apps
     casks = [
@@ -87,6 +88,7 @@
       "minecraft" # game
       "modrinth" # minecraft mod manager
       "libreoffice" # office suite
+      "netron" # neural network model viewer
 
     ];
     # Apple app store apps
