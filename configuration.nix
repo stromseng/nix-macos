@@ -89,6 +89,7 @@
       "modrinth" # minecraft mod manager
       "libreoffice" # office suite
       "netron" # neural network model viewer
+      "steermouse" # mouse utility software
 
     ];
     # Apple app store apps
@@ -117,7 +118,7 @@
   # programs.fish.enable = true;
 
   # Enable touchid for sudo commands
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 
   system.defaults = {
     dock.autohide = true; # Automatically hide and show the Dock
