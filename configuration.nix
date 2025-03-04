@@ -48,6 +48,7 @@
       "sqlite" # sqlite db cli tool
       "sqlx-cli" # rust sqlx cli tool
       "graphviz" # keras plot model
+      "typstyle" # Typst lanuguage formatter
     ];
     # GUI apps
     casks = [
