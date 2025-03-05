@@ -105,8 +105,10 @@
   };
 
   # Install fonts
-  fonts.packages = [
-    pkgs.nerd-fonts.jetbrains-mono
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    inter
+    source-sans-pro
   ];
 
   # nix.package = pkgs.nix;
