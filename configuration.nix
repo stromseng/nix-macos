@@ -49,6 +49,9 @@
       "sqlx-cli" # rust sqlx cli tool
       "graphviz" # keras plot model
       "typstyle" # Typst lanuguage formatter
+      "pkgconf" # Package compiler and linker metadata toolkit, needed for certain python packages
+      "ffmpeg" # video/audio processing
+      "pandoc" # universal markdown converter
     ];
     # GUI apps
     casks = [
@@ -91,7 +94,7 @@
       "libreoffice" # office suite
       "netron" # neural network model viewer
       "steermouse" # mouse utility software
-
+      "mactex" # latex typesetting system
     ];
     # Apple app store apps
     masApps = {

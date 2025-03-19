@@ -56,6 +56,8 @@
           PATH=~/.console-ninja/.bin:$PATH # vscode extension console ninja
           export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
 
+          export PATH="/usr/local/texlive/2025/bin/universal-darwin:$PATH" # mactex
+
           eval "$(fnm env --use-on-cd --shell zsh)" # fast node version manager
 
           . "$HOME/.cargo/env" # rust
