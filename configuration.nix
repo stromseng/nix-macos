@@ -96,6 +96,8 @@
       "netron" # neural network model viewer
       "steermouse" # mouse utility software
       "mactex" # latex typesetting system
+      "deskreen" # use tablet as second screen
+      "deskpad" # creates virtual monitor for usage with deskscreen
     ];
     # Apple app store apps
     masApps = {
