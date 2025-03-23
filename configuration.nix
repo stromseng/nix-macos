@@ -52,6 +52,7 @@
       "pkgconf" # Package compiler and linker metadata toolkit, needed for certain python packages
       "ffmpeg" # video/audio processing
       "pandoc" # universal markdown converter
+      "go" # go programming language
     ];
     # GUI apps
     casks = [
