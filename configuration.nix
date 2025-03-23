@@ -98,6 +98,8 @@
       "mactex" # latex typesetting system
       "deskreen" # use tablet as second screen
       "deskpad" # creates virtual monitor for usage with deskscreen
+      "obsidian" # note taking app
+      "tailscale" # VPN
     ];
     # Apple app store apps
     masApps = {
