@@ -113,6 +113,7 @@
     nerd-fonts.jetbrains-mono
     inter
     source-sans-pro
+    newcomputermodern
   ];
 
   # nix.package = pkgs.nix;
