@@ -109,7 +109,7 @@
       "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
     };
     onActivation.autoUpdate = true;
-    #onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
+    onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
     onActivation.upgrade = true;
   };
 
