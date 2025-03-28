@@ -53,6 +53,7 @@
       "ffmpeg" # video/audio processing
       "pandoc" # universal markdown converter
       "go" # go programming language
+      "deno" # javascript runtime
     ];
     # GUI apps
     casks = [
