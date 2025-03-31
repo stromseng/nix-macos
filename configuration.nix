@@ -54,6 +54,7 @@
       "pandoc" # universal markdown converter
       "go" # go programming language
       "deno" # javascript runtime
+      "pnpm" # javascript package manager
     ];
     # GUI apps
     casks = [
