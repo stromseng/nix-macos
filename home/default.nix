@@ -50,6 +50,8 @@
 
           cat = "bat";
           ls = "eza";
+
+          pn = "pnpm";
         };
         initExtraBeforeCompInit = '''';
         initExtra = ''
