@@ -55,6 +55,8 @@
       "go" # go programming language
       "deno" # javascript runtime
       "pnpm" # javascript package manager
+      "cocoapods" # Expo ios dependency, Dependency manager for Cocoa projects
+      "watchman" # expo dependency, tool for watching changes in the filesystem
     ];
     # GUI apps
     casks = [
