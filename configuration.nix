@@ -104,6 +104,7 @@
       "deskpad" # creates virtual monitor for usage with deskscreen
       "obsidian" # note taking app
       "tailscale" # VPN
+      "ghostty" # terminal emulator
     ];
     # Apple app store apps
     masApps = {
