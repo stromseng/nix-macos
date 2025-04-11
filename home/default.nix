@@ -63,6 +63,8 @@
           eval "$(fnm env --use-on-cd --shell zsh)" # fast node version manager
 
           . "$HOME/.cargo/env" # rust
+
+          export PATH=$PATH:$HOME/go/bin # go install binaries
         '';
       };
       # A modern ls replacement
