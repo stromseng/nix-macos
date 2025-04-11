@@ -30,7 +30,7 @@
 
       zsh = {
         enable = true;
-        enableCompletion = true;
+        enableCompletion = false; # using zsh-autocomplete instead
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
         syntaxHighlighting.highlighters = [
@@ -55,7 +55,15 @@
 
           pn = "pnpm";
         };
-        initExtraBeforeCompInit = '''';
+        # Commands that should be added to top of {file}`.zshrc`.
+        initExtraFirst = ''
+
+        '';
+        #	Extra commands that should be added to {file}`.zshrc` before compinit.
+        initExtraBeforeCompInit = ''
+
+        '';
+        #	Extra commands that should be added to {file}`.zshrc`.
         initExtra = ''
           PATH=~/.console-ninja/.bin:$PATH # vscode extension console ninja
           export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
@@ -67,8 +75,24 @@
           . "$HOME/.cargo/env" # rust
 
           export PATH=$PATH:$HOME/go/bin # go install binaries
+
+          # Set up fzf key bindings and fuzzy completion
+          source <(fzf --zsh)
+
+          source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
+
+
+          # bind up arrow to fzf history
+          bindkey '\e[A' fzf-history-widget
+
+
+
         '';
       };
+      fzf = {
+        enableZshIntegration = true;
+      };
+
       # A modern ls replacement
       eza = {
         enable = true;

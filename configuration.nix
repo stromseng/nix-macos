@@ -23,6 +23,7 @@
     uv # python manager
     gh # github cli
     fnm # fast node version manager
+    zsh-fzf-tab # zsh fzf tab completion
   ];
 
   # Homebrew packages to install
@@ -57,6 +58,7 @@
       "pnpm" # javascript package manager
       "cocoapods" # Expo ios dependency, Dependency manager for Cocoa projects
       "watchman" # expo dependency, tool for watching changes in the filesystem
+      "fzf" # fuzzy finder
     ];
     # GUI apps
     casks = [
