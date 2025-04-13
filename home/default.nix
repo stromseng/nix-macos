@@ -25,6 +25,8 @@
           pull.rebase = false;
 
           init.defaultBranch = "main";
+
+          core.editor = "code-insiders --wait";
         };
       };
 
