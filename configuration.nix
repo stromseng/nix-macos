@@ -24,6 +24,7 @@
     gh # github cli
     fnm # fast node version manager
     zsh-fzf-tab # zsh fzf tab completion
+    pnpm_10 # javascript package manager
   ];
 
   # Homebrew packages to install
@@ -55,7 +56,6 @@
       "pandoc" # universal markdown converter
       "go" # go programming language
       "deno" # javascript runtime
-      "pnpm" # javascript package manager
       "cocoapods" # Expo ios dependency, Dependency manager for Cocoa projects
       "watchman" # expo dependency, tool for watching changes in the filesystem
       "fzf" # fuzzy finder
