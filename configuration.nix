@@ -92,7 +92,7 @@
       "ghostty" # terminal emulator
       "PrusaSlicer" # 3d printer slicer
       "db-browser-for-sqlite" # sqlite db browser
-      "docker" # container manager
+      "orbstack" # container manager, docker desktop replacement
       "google-chrome" # browser
       "bruno" # api testing
       "steam" # game store
