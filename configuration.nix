@@ -115,7 +115,6 @@
       "Xcode" = 497799835; # Xcode IDE
       "Bitwarden" = 1352778147; # password manager
       "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
-      "feeeed" = 1600187490; # RSS reader
     };
     onActivation.autoUpdate = true;
     onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
