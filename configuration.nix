@@ -94,7 +94,7 @@
       "db-browser-for-sqlite" # sqlite db browser
       "docker" # container manager
       "google-chrome" # browser
-      "postman" # api testing
+      "bruno" # api testing
       "steam" # game store
       "microsoft-teams" # microsoft teams
       "minecraft" # game
