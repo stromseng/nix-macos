@@ -57,16 +57,8 @@
 
           pn = "pnpm";
         };
-        # Commands that should be added to top of {file}`.zshrc`.
-        initExtraFirst = ''
-
-        '';
-        #	Extra commands that should be added to {file}`.zshrc` before compinit.
-        initExtraBeforeCompInit = ''
-
-        '';
         #	Extra commands that should be added to {file}`.zshrc`.
-        initExtra = ''
+        initContent = ''
           PATH=~/.console-ninja/.bin:$PATH # vscode extension console ninja
           export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
 
