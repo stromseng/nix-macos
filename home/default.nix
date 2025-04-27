@@ -105,6 +105,13 @@
       };
     };
 
+    # Copy ghostty config
+    home.file = {
+      ".config/ghostty/config" = {
+        source = ./config/ghostty;
+      };
+    };
+
     home.stateVersion = "24.11";
   };
 
