@@ -25,6 +25,7 @@
     fnm # fast node version manager
     zsh-fzf-tab # zsh fzf tab completion
     pnpm_10 # javascript package manager
+    yarn-berry # javascript package manager
   ];
 
   # Homebrew packages to install
