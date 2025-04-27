@@ -110,6 +110,10 @@
       ".config/ghostty/config" = {
         source = ./config/ghostty;
       };
+      # Prevent the 'Last login' message in new shells
+      ".hushlogin" = {
+        text = "";
+      };
     };
 
     home.stateVersion = "24.11";
