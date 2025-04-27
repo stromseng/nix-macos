@@ -51,9 +51,11 @@
           gpl = "git pull";
           gco = "git checkout";
           gd = "git diff";
+          gl = "git log --oneline";
+          gsw = "git switch";
 
           cat = "bat";
-          ls = "eza";
+          ls = "eza --hyperlink --icons";
 
           pn = "pnpm";
         };
