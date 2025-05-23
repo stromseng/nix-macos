@@ -58,6 +58,7 @@
           ls = "eza --hyperlink --icons";
 
           pn = "pnpm";
+          pnx = "pnpx";
         };
         #	Extra commands that should be added to {file}`.zshrc`.
         initContent = ''

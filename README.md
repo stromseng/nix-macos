@@ -18,3 +18,10 @@
 ## Updating
 
 - Run `nix flake update` to update flake lock file
+
+
+
+### Currently not declarative
+- Raycast application hotkeys, cmd + 1,2,3 etc for browser, ide, terminal
+- AltTab settings
+- Karabiner elemetns control-option tab swap

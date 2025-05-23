@@ -109,6 +109,8 @@
       "obsidian" # note taking app
       "tailscale" # VPN
       "ghostty" # terminal emulator
+      "handbrake" # video transcoder
+      "karabiner-elements" # keyboard remapping
     ];
     # Apple app store apps
     masApps = {
