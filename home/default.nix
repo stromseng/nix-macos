@@ -26,7 +26,7 @@
 
           init.defaultBranch = "main";
 
-          core.editor = "code-insiders --wait";
+          core.editor = "cursor --wait";
         };
       };
 
@@ -81,6 +81,10 @@
 
           # bind up arrow to fzf history
           bindkey '\e[A' fzf-history-widget
+
+          # Setup terraform autocomplete
+          complete -o nospace -C ${pkgs.terraform}/bin/terraform terraform
+
 
 
 
