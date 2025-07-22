@@ -41,6 +41,10 @@
         ];
         autocd = true;
         defaultKeymap = "emacs";
+        history = {
+          save = 10000000;
+          size = 10000000;
+        };
 
         shellAliases = {
           gs = "git status";

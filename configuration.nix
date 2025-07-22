@@ -25,6 +25,7 @@
     pnpm_10 # javascript package manager
     yarn-berry # javascript package manager
     duti # tool to set default applications
+    google-cloud-sdk
   ];
 
   # Homebrew packages to install
@@ -66,7 +67,6 @@
       "bruno" # api testing
       "google-chrome" # browser
       "docker-desktop" # container manager
-      "hoppscotch" # postman alternative for api testing
     ];
     # Apple app store apps
     masApps = {

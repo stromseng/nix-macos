@@ -1,4 +1,7 @@
 # Minimal Ghostty config
+
+# size in bytes
+scrollback-limit = 1000000000
 theme = snazzy
 
 keybind = option+zero=reset_font_size
