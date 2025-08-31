@@ -35,6 +35,7 @@
     taps = [
       "oven-sh/bun" # bun, javascript toolkit
       "qmk/qmk" # keyboard firmware
+      "sst/tap" # opencode sst cli
     ];
     # CLI apps
     brews = [
@@ -61,6 +62,11 @@
       "cocoapods" # Expo ios dependency, Dependency manager for Cocoa projects
       "watchman" # expo dependency, tool for watching changes in the filesystem
       "fzf" # fuzzy finder
+      "fd" # fast find alternative
+      "opencode" # opencode sst cli
+      "ipget" # ipfs downloader
+      "openconnect" # vpn client
+      "just" # task runner
     ];
     # GUI apps
     casks = [
@@ -111,12 +117,28 @@
       "ghostty" # terminal emulator
       "handbrake" # video transcoder
       "karabiner-elements" # keyboard remapping
+      "dotnet-sdk" # dotnet sdk
+      "utm" # virtual machines using qemu for macos
+      "zen" # browser based on firefox, like arcx
+      #"megasync" # file downlaoding and syncing
+      "nordvpn" # vpn
+      "microsoft-excel" # excel, spreadsheet
+      "microsoft-powerpoint" # powerpoint, presentation
+      "microsoft-word" # word, document
+      "microsoft-outlook" # email, calendar, contacts
+      "notion-mail" # email, contacts
+      "notion-calendar" # calendar
+      "google-drive" # file syncing
+      "ollama-app" # local ml models
+      "qbittorrent" # torrent client
+      "vlc" # media player
     ];
     # Apple app store apps
     masApps = {
       "Xcode" = 497799835; # Xcode IDE
       "Bitwarden" = 1352778147; # password manager
       "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
+      "Kakaotalk" = 869223134; # south korea chat app
     };
     onActivation.autoUpdate = true;
     onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
