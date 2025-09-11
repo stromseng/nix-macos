@@ -132,6 +132,7 @@
       "ollama-app" # local ml models
       "qbittorrent" # torrent client
       "vlc" # media player
+      "zotero" # reference manager
     ];
     # Apple app store apps
     masApps = {
