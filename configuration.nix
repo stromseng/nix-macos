@@ -27,6 +27,7 @@
     pnpm_10 # javascript package manager
     yarn-berry # javascript package manager
     duti # tool to set default applications
+    zoxide # cd alternative, uses frecency algorithm to rank directories
   ];
 
   # Homebrew packages to install
@@ -110,14 +111,14 @@
       "netron" # neural network model viewer
       "mac-mouse-fix" # mouse utility software
       "mactex" # latex typesetting system
-      "deskreen" # use tablet as second screen
-      "deskpad" # creates virtual monitor for usage with deskscreen
-      "obsidian" # note taking app
+      # "deskreen" # use tablet as second screen
+      # "deskpad" # creates virtual monitor for usage with deskscreen
+      # "obsidian" # note taking app
       "tailscale" # VPN
       "ghostty" # terminal emulator
       "handbrake" # video transcoder
       "karabiner-elements" # keyboard remapping
-      "dotnet-sdk" # dotnet sdk
+      # "dotnet-sdk" # dotnet sdk
       "utm" # virtual machines using qemu for macos
       "zen" # browser based on firefox, like arcx
       #"megasync" # file downlaoding and syncing
@@ -166,6 +167,8 @@
   # Enable touchid for sudo commands
   security.pam.services.sudo_local.touchIdAuth = true;
 
+  system.primaryUser = "magnus";
+
   system.defaults = {
     dock.autohide = true; # Automatically hide and show the Dock
     dock.mru-spaces = false; # Don't rearrange spaces based on most recently used
@@ -189,54 +192,54 @@
   system.keyboard.enableKeyMapping = true;
   system.keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
 
-  system.activationScripts.postUserActivation = {
-    # Set cursor as default application for certain file types
-    text = ''
-      CURSOR_ID="com.todesktop.230313mzl4w4u92"
-      DUTI_BIN="${pkgs.duti}/bin/duti"
+  # system.activationScripts.postUserActivation = {
+  #   # Set cursor as default application for certain file types
+  #   text = ''
+  #     CURSOR_ID="com.todesktop.230313mzl4w4u92"
+  #     DUTI_BIN="${pkgs.duti}/bin/duti"
 
-      # General text & code
-      $DUTI_BIN -s $CURSOR_ID public.plain-text all
-      $DUTI_BIN -s $CURSOR_ID public.source-code all
-      $DUTI_BIN -s $CURSOR_ID .txt all
+  #     # General text & code
+  #     $DUTI_BIN -s $CURSOR_ID public.plain-text all
+  #     $DUTI_BIN -s $CURSOR_ID public.source-code all
+  #     $DUTI_BIN -s $CURSOR_ID .txt all
 
-      # Scripting
-      $DUTI_BIN -s $CURSOR_ID .sh all
-      $DUTI_BIN -s $CURSOR_ID .zsh all
-      $DUTI_BIN -s $CURSOR_ID .py all
+  #     # Scripting
+  #     $DUTI_BIN -s $CURSOR_ID .sh all
+  #     $DUTI_BIN -s $CURSOR_ID .zsh all
+  #     $DUTI_BIN -s $CURSOR_ID .py all
 
-      # Web
-      $DUTI_BIN -s $CURSOR_ID .js all
-      $DUTI_BIN -s $CURSOR_ID .mjs all
-      $DUTI_BIN -s $CURSOR_ID .cjs all
-      $DUTI_BIN -s $CURSOR_ID .ts all
-      $DUTI_BIN -s $CURSOR_ID .tsx all
-      $DUTI_BIN -s $CURSOR_ID .json all
-      $DUTI_BIN -s $CURSOR_ID .yaml all
-      $DUTI_BIN -s $CURSOR_ID .yml all
-      $DUTI_BIN -s $CURSOR_ID .css all
+  #     # Web
+  #     $DUTI_BIN -s $CURSOR_ID .js all
+  #     $DUTI_BIN -s $CURSOR_ID .mjs all
+  #     $DUTI_BIN -s $CURSOR_ID .cjs all
+  #     $DUTI_BIN -s $CURSOR_ID .ts all
+  #     $DUTI_BIN -s $CURSOR_ID .tsx all
+  #     $DUTI_BIN -s $CURSOR_ID .json all
+  #     $DUTI_BIN -s $CURSOR_ID .yaml all
+  #     $DUTI_BIN -s $CURSOR_ID .yml all
+  #     $DUTI_BIN -s $CURSOR_ID .css all
 
-      # Markup
-      $DUTI_BIN -s $CURSOR_ID .md all
+  #     # Markup
+  #     $DUTI_BIN -s $CURSOR_ID .md all
 
-      # Nix
-      $DUTI_BIN -s $CURSOR_ID .nix all
+  #     # Nix
+  #     $DUTI_BIN -s $CURSOR_ID .nix all
 
-      # Rust
-      $DUTI_BIN -s $CURSOR_ID .rs all
+  #     # Rust
+  #     $DUTI_BIN -s $CURSOR_ID .rs all
 
-      # Go
-      $DUTI_BIN -s $CURSOR_ID .go all
+  #     # Go
+  #     $DUTI_BIN -s $CURSOR_ID .go all
 
-      # Config/Build
-      $DUTI_BIN -s $CURSOR_ID .gitignore all
-      $DUTI_BIN -s $CURSOR_ID .gitattributes all
-      $DUTI_BIN -s $CURSOR_ID .gitmodules all
-      $DUTI_BIN -s $CURSOR_ID Dockerfile all
-      $DUTI_BIN -s $CURSOR_ID Makefile all
-      $DUTI_BIN -s $CURSOR_ID makefile all
-    '';
-  };
+  #     # Config/Build
+  #     $DUTI_BIN -s $CURSOR_ID .gitignore all
+  #     $DUTI_BIN -s $CURSOR_ID .gitattributes all
+  #     $DUTI_BIN -s $CURSOR_ID .gitmodules all
+  #     $DUTI_BIN -s $CURSOR_ID Dockerfile all
+  #     $DUTI_BIN -s $CURSOR_ID Makefile all
+  #     $DUTI_BIN -s $CURSOR_ID makefile all
+  #   '';
+  # };
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog

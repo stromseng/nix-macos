@@ -47,6 +47,7 @@
           ga = "git add";
           gaa = "git add --all";
           gc = "git commit";
+          gcm = "git commit -m";
           gph = "git push";
           gpl = "git pull";
           gco = "git checkout";
@@ -81,6 +82,9 @@
 
           # bind up arrow to fzf history
           bindkey '\e[A' fzf-history-widget
+
+          # setup zoxide
+          eval "$(zoxide init zsh)"
 
 
 

@@ -1,2 +1,2 @@
 switch:
-    darwin-rebuild switch --flake .#mmbp
+    sudo darwin-rebuild switch --flake .#mmbp
