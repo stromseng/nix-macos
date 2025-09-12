@@ -28,6 +28,31 @@
     yarn-berry # javascript package manager
     duti # tool to set default applications
     zoxide # cd alternative, uses frecency algorithm to rank directories
+    mas # Mac App Store CLI
+    sqlmap # SQL injection tool
+    gobuster # website directory and file brute force tool
+    wget # download files
+    hashcat # password cracker
+    rustup # rust language manager
+    bun # javascript toolkit
+    qmk # keyboard firmware helper
+    thc-hydra # bruteforce password cracking
+    sqlite # sqlite db cli tool
+    sqlx-cli # rust sqlx cli tool
+    graphviz # graph visualization tools
+    typstyle # Typst language formatter
+    pkgconf # compiler and linker metadata toolkit
+    ffmpeg # video/audio processing
+    pandoc # universal markdown converter
+    go # go programming language
+    deno # javascript runtime
+    cocoapods # Cocoa projects dependency manager
+    watchman # filesystem watcher
+    fzf # fuzzy finder
+    fd # fast find alternative
+    ipget # ipfs downloader
+    openconnect # vpn client
+    just # task runner
   ];
 
   # Homebrew packages to install
@@ -40,34 +65,9 @@
     ];
     # CLI apps
     brews = [
-      "mas" # Mac App Store CLI
-      "fileicon" # Set file/folder icons
-      "sqlmap" # SQL injection tool
-      "gobuster" # website directory and file brute force tool
-      "wget" # download files
-      "hashcat" # password cracker
-      "rustup" # rust language manager. Run `rustup-init` after install
+      "fileicon" # Set file/folder icons (not in nixpkgs)
       #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
-      "oven-sh/bun/bun" # bun, javascript toolkit
-      "qmk/qmk/qmk" # keyboard firmware
-      "hydra" # bruteforce password cracking
-      "sqlite" # sqlite db cli tool
-      "sqlx-cli" # rust sqlx cli tool
-      "graphviz" # keras plot model
-      "typstyle" # Typst lanuguage formatter
-      "pkgconf" # Package compiler and linker metadata toolkit, needed for certain python packages
-      "ffmpeg" # video/audio processing
-      "pandoc" # universal markdown converter
-      "go" # go programming language
-      "deno" # javascript runtime
-      "cocoapods" # Expo ios dependency, Dependency manager for Cocoa projects
-      "watchman" # expo dependency, tool for watching changes in the filesystem
-      "fzf" # fuzzy finder
-      "fd" # fast find alternative
-      "opencode" # opencode sst cli
-      "ipget" # ipfs downloader
-      "openconnect" # vpn client
-      "just" # task runner
+      "opencode" # opencode sst cli (not in nixpkgs / different tool)
     ];
     # GUI apps
     casks = [
