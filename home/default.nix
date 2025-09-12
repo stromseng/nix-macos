@@ -60,6 +60,8 @@
 
           pn = "pnpm";
           pnx = "pnpx";
+
+          j = "just";
         };
         #	Extra commands that should be added to {file}`.zshrc`.
         initContent = ''
