@@ -57,6 +57,8 @@
 
           cat = "bat";
           ls = "eza --hyperlink --icons";
+          cd = "z";
+          cdi = "zi";
 
           pn = "pnpm";
           pnx = "pnpx";
