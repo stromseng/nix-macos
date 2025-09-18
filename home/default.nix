@@ -62,6 +62,7 @@
           pnx = "pnpx";
 
           j = "just";
+          oc = "opencode";
         };
         #	Extra commands that should be added to {file}`.zshrc`.
         initContent = ''
@@ -88,8 +89,11 @@
           # setup zoxide
           eval "$(zoxide init zsh)"
 
+          # Set Bitwarden App Store App as SSH agent. https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent
+          export SSH_AUTH_SOCK=/Users/magnus/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 
-
+          # Set github copilot cli suggestions alias
+          eval "$(gh copilot alias -- zsh)"
         '';
       };
       fzf = {
@@ -114,10 +118,15 @@
       };
     };
 
+    # Recursive home files copy without having to specify each single file: https://github.com/nix-community/home-manager/issues/3849
+
     # Copy ghostty config
     home.file = {
       ".config/ghostty/config" = {
-        source = ./config/ghostty;
+        source = ./magnus/.config/ghostty;
+      };
+      ".config/just/justfile" = {
+        source = ./magnus/.config/just/justfile;
       };
       # Prevent the 'Last login' message in new shells
       ".hushlogin" = {

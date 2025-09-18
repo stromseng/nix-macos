@@ -68,6 +68,7 @@
       "fileicon" # Set file/folder icons (not in nixpkgs)
       #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
       "opencode" # opencode sst cli (not in nixpkgs / different tool)
+      "bitwarden-cli"
     ];
     # GUI apps
     casks = [
@@ -95,7 +96,7 @@
       "lm-studio" # local ml models
       "betterdisplay" # monitor / display config manager
       "stats" # system stats in menu bar
-      "burp-suite" # web security testing
+      #"burp-suite" # web security testing
       "zap" # web security testing
       "ghostty" # terminal emulator
       "PrusaSlicer" # 3d printer slicer
@@ -119,7 +120,7 @@
       "handbrake" # video transcoder
       "karabiner-elements" # keyboard remapping
       # "dotnet-sdk" # dotnet sdk
-      "utm" # virtual machines using qemu for macos
+      #"utm" # virtual machines using qemu for macos
       "zen" # browser based on firefox, like arcx
       #"megasync" # file downlaoding and syncing
       "nordvpn" # vpn

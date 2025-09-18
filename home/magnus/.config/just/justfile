@@ -1,0 +1,27 @@
+# This file is mainly used as a reminder of useful commands.
+
+# Github Copilot CLI Suggest a command
+ghcs:
+    ghcs
+# Github Copilot CLI Explain a command
+ghce:
+    ghce
+
+# fzf Fuzzy finder
+fzf:
+    fzf
+
+# zoxide cd alternative
+z:
+    z
+# zoxide interactive cd
+zi:
+    zi
+
+# ripgrep
+rg:
+    rg
+
+# fd fast find alternative
+fd:
+    fd
