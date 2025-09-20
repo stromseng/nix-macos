@@ -125,7 +125,7 @@
     # Copy ghostty config
     home.file = {
       ".config/ghostty/config" = {
-        source = ./magnus/.config/ghostty;
+        source = ./magnus/.config/ghostty/config;
       };
       ".config/just/justfile" = {
         source = ./magnus/.config/just/justfile;

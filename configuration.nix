@@ -69,6 +69,7 @@
       #"tcl-tk" # Tcl/Tk provides the Tcl scripting language and Tk GUI toolkit, needed for GUI applications.
       "opencode" # opencode sst cli (not in nixpkgs / different tool)
       "bitwarden-cli"
+      "codex" # openai coding cli assistant
     ];
     # GUI apps
     casks = [
@@ -103,7 +104,8 @@
       "db-browser-for-sqlite" # sqlite db browser
       "orbstack" # container manager, docker desktop replacement
       "google-chrome" # browser
-      "bruno" # api testing
+      #"bruno" # api testing
+      "yaak" # api testing
       "steam" # game store
       "microsoft-teams" # microsoft teams
       "minecraft" # game
