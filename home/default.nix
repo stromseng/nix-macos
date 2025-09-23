@@ -130,6 +130,10 @@
       ".config/just/justfile" = {
         source = ./magnus/.config/just/justfile;
       };
+      ".cursor/commands" = {
+        source = ./magnus/.cursor/commands;
+        recursive = true;
+      };
       # Prevent the 'Last login' message in new shells
       ".hushlogin" = {
         text = "";
