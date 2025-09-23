@@ -11,4 +11,8 @@ keybind = option+six=goto_tab:6
 keybind = option+seven=goto_tab:7
 keybind = option+eight=goto_tab:8
 keybind = option+nine=last_tab
+
+keybind = option+shift+tab=previous_tab
 keybind = option+tab=next_tab
+
+keybind = super+l=clear_screen
