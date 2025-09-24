@@ -137,6 +137,7 @@
       "qbittorrent" # torrent client
       "vlc" # media player
       "zotero" # reference manager
+      "zoom" # video conferencing
     ];
     # Apple app store apps
     masApps = {
