@@ -117,9 +117,9 @@
       # "deskreen" # use tablet as second screen
       # "deskpad" # creates virtual monitor for usage with deskscreen
       # "obsidian" # note taking app
-      "tailscale" # VPN
+      "tailscale-app" # VPN
       "ghostty" # terminal emulator
-      "handbrake" # video transcoder
+      "handbrake-app" # video transcoder
       "karabiner-elements" # keyboard remapping
       # "dotnet-sdk" # dotnet sdk
       #"utm" # virtual machines using qemu for macos
