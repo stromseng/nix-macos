@@ -138,6 +138,7 @@
       "vlc" # media player
       "zotero" # reference manager
       "zoom" # video conferencing
+      "obs" # video recording and streaming
     ];
     # Apple app store apps
     masApps = {
