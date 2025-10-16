@@ -93,14 +93,16 @@
           # bind up arrow to fzf history
           bindkey '\e[A' fzf-history-widget
 
-          # setup zoxide
-          eval "$(zoxide init zsh)"
 
           # Set Bitwarden App Store App as SSH agent. https://bitwarden.com/help/ssh-agent/#configure-bitwarden-ssh-agent
           export SSH_AUTH_SOCK=/Users/magnus/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 
           # Set github copilot cli suggestions alias
           eval "$(gh copilot alias -- zsh)"
+
+
+          # setup zoxide
+          eval "$(zoxide init zsh)"
         '';
       };
       fzf = {
