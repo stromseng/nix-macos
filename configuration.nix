@@ -105,7 +105,7 @@
       "orbstack" # container manager, docker desktop replacement
       "google-chrome" # browser
       #"bruno" # api testing
-      "yaak" # api testing
+      "yaak" # api testing, checkout "scalar" once it becomes available as brew/nix package
       "steam" # game store
       "microsoft-teams" # microsoft teams
       "minecraft" # game
