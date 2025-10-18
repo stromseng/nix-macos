@@ -39,6 +39,69 @@
                 }
             ],
             "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "q",
+                "modifiers": {
+                    "mandatory": [
+                        "left_shift",
+                        "left_command",
+                        "left_control",
+                        "left_option"
+                    ],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "1",
+                    "modifiers": ["left_control"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "left_shift",
+                        "left_command",
+                        "left_control",
+                        "left_option"
+                    ],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "2",
+                    "modifiers": ["left_control"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "e",
+                "modifiers": {
+                    "mandatory": [
+                        "left_shift",
+                        "left_command",
+                        "left_control",
+                        "left_option"
+                    ],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "3",
+                    "modifiers": ["left_control"]
+                }
+            ],
+            "type": "basic"
         }
     ]
 }

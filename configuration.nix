@@ -195,7 +195,6 @@
   };
 
   system.keyboard.enableKeyMapping = true;
-  system.keyboard.remapCapsLockToEscape = true; # remap CAPS to escape
 
   # system.activationScripts.postUserActivation = {
   #   # Set cursor as default application for certain file types
