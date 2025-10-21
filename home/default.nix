@@ -73,7 +73,6 @@
         };
         #	Extra commands that should be added to {file}`.zshrc`.
         initContent = ''
-          PATH=~/.console-ninja/.bin:$PATH # vscode extension console ninja
           export PATH="/Users/magnus/.local/bin:$PATH" # cant remember why
 
           export PATH="/usr/local/texlive/2025/bin/universal-darwin:$PATH" # mactex
