@@ -18,10 +18,10 @@
     programs = {
       git = {
         enable = true;
-        userName = "Magnus Strømseng";
-        userEmail = "magnus.stromseng@gmail.com";
+        settings = {
+          user.name = "Magnus Strømseng";
+          user.email = "magnus.stromseng@gmail.com";
 
-        extraConfig = {
           pull.rebase = false;
 
           init.defaultBranch = "main";
@@ -31,7 +31,6 @@
           gpg.format = "ssh";
           user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGNJ7Klgd0r8n0tJGdp8XWZOWUhmX9NPFPgHWEaS1nuj";
           commit.gpgsign = true;
-
         };
       };
 
