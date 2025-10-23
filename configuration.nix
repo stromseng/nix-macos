@@ -139,6 +139,7 @@
       "zotero" # reference manager
       "zoom" # video conferencing
       "obs" # video recording and streaming
+      "zed" # IDE written in rust
     ];
     # Apple app store apps
     masApps = {
