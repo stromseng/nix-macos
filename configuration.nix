@@ -53,6 +53,7 @@
     ipget # ipfs downloader
     openconnect # vpn client
     just # task runner
+    croc # file transfer cli
   ];
 
   # Homebrew packages to install
