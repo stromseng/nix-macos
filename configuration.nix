@@ -114,7 +114,7 @@
       "libreoffice" # office suite
       "netron" # neural network model viewer
       "mac-mouse-fix" # mouse utility software
-      "mactex" # latex typesetting system
+      #"mactex" # latex typesetting system
       # "deskreen" # use tablet as second screen
       # "deskpad" # creates virtual monitor for usage with deskscreen
       # "obsidian" # note taking app
@@ -141,6 +141,7 @@
       "zoom" # video conferencing
       "obs" # video recording and streaming
       "zed" # IDE written in rust
+      "affinity" # Image editing and design software
     ];
     # Apple app store apps
     masApps = {
