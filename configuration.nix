@@ -142,6 +142,7 @@
       "obs" # video recording and streaming
       "zed" # IDE written in rust
       "affinity" # Image editing and design software
+      "nvidia-geforce-now" # remote gaming
     ];
     # Apple app store apps
     masApps = {
