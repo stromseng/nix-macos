@@ -54,6 +54,7 @@
     openconnect # vpn client
     just # task runner
     croc # file transfer cli
+    cmake # build system
   ];
 
   # Homebrew packages to install
@@ -145,12 +146,12 @@
       "nvidia-geforce-now" # remote gaming
     ];
     # Apple app store apps
-    masApps = {
-      "Xcode" = 497799835; # Xcode IDE
-      "Bitwarden" = 1352778147; # password manager
-      "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
-      "Kakaotalk" = 869223134; # south korea chat app
-    };
+    # masApps = {
+    #   "Xcode" = 497799835; # Xcode IDE
+    #   "Bitwarden" = 1352778147; # password manager
+    #   "GeoGebra Classic 6" = 1182481622; # math calculator and graphing app
+    #   "Kakaotalk" = 869223134; # south korea chat app
+    # };
     onActivation.autoUpdate = true;
     onActivation.cleanup = "zap"; # delete any installed brews not defined in this file
     onActivation.upgrade = true;
