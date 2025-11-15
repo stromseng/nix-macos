@@ -7,8 +7,7 @@ Create a well-structured commit for the currently staged changes following the C
 
 ## Steps
 1. **Review staged changes**
-   - Check what's staged: `git status`
-   - Review staged diff: `git diff --cached`
+   - Check staged files and diff: `git status && git diff --cached`
    - Verify this is exactly what should be committed
 
 2. **Write commit message**
